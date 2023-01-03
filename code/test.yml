@@ -1,0 +1,8 @@
+name: Benno
+age: 40
+address: "Leipzig"
+active: true
+array:
+ - item1
+ - item2
+ - {key: value}
