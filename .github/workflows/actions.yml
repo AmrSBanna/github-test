@@ -21,8 +21,9 @@ jobs:
            echo $GITHUB_REPOSITORY
            echo $GITHUB_WORKSPACE
            echo "${{ github.token }}"
-          #  git clone git@hithub:$GITHUB_REPOSITORY
-          #  git checkout $GITHUB_SHA
+           #  git clone git@hithub:$GITHUB_REPOSITORY
+           #  git checkout $GITHUB_SHA
+           echo $GITHUB_REF
       - name: Checkout Repo
         uses: actions/checkout@v3
 
