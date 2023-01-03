@@ -10,6 +10,12 @@ jobs:
         run: |
            pwd
            ls -a
+           echo $GITHUB_SHA
+           echo $GITHUB_REPOSITORY
+           echo $GITHUB_WORKSPACE
+           echo "{{ git.token }}"
+          #  git clone git@hithub:$GITHUB_REPOSITORY
+          #  git checkout $GITHUB_SHA
       - name: Checkout Repo
         uses: actions/checkout@v3
 
